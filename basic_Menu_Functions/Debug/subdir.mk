@@ -6,16 +6,19 @@
 CPP_SRCS += \
 ../basic_Menu.cpp \
 ../mainMenu.cpp \
+../optionsMenu.cpp \
 ../tutorial.cpp 
 
 CPP_DEPS += \
 ./basic_Menu.d \
 ./mainMenu.d \
+./optionsMenu.d \
 ./tutorial.d 
 
 OBJS += \
 ./basic_Menu.o \
 ./mainMenu.o \
+./optionsMenu.o \
 ./tutorial.o 
 
 
@@ -31,7 +34,7 @@ OBJS += \
 clean: clean--2e-
 
 clean--2e-:
-	-$(RM) ./basic_Menu.d ./basic_Menu.o ./mainMenu.d ./mainMenu.o ./tutorial.d ./tutorial.o
+	-$(RM) ./basic_Menu.d ./basic_Menu.o ./mainMenu.d ./mainMenu.o ./optionsMenu.d ./optionsMenu.o ./tutorial.d ./tutorial.o
 
 .PHONY: clean--2e-
 

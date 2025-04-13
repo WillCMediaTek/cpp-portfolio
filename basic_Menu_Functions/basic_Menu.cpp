@@ -12,13 +12,10 @@
 
 #include "mainMenu.h"
 
-
-
 int main(){
 	MainMenu menu; // Create an instance of the MainMenu class
 	menu.displayMenu(); // Display the menu
-	menu.getUserInput(); // Get user input and handle menu selection
-		
+
 	getchar();		
 	return 0;
 }
